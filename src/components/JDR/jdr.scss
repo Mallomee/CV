@@ -1,0 +1,83 @@
+.jdr{
+
+  main>section:not(:last-child) {
+    padding-bottom: 0.5rem;
+    border-bottom: thick double #32a1ce;
+  }
+
+  p{
+    padding:.3rem 0;
+  }
+
+  text-align: justify;
+  h2.title{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    color: #3d1908;
+  }
+
+  &-info{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &-capacites{
+    h3{
+      color: #971f1f;
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0.7rem 0 0.5rem;
+    }
+    ul{
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    li{
+      min-width: fit-content;
+      padding:0.5rem;
+
+      .bi{
+        color: rgb(255, 208, 0);
+      }
+      i:first-child{
+        margin-left:0.5rem;
+      }
+    }
+  }
+
+  &-attributs{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    h4{
+      font-weight: bold;
+    }
+    div{
+      text-align: left;
+      max-width:30%;
+    }
+    ul{
+      list-style: disc;
+      margin-left: 1.2rem;
+    }
+  }
+
+  &-passions{
+    span{
+      font-weight: bold;
+    }
+  }
+
+  &-repliques{
+    text-align: justify;
+    .citation{
+      font-style: italic;
+    }
+  }
+
+}

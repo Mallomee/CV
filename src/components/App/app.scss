@@ -1,0 +1,29 @@
+button{
+  position: fixed;
+
+  &.modeJDR{
+    right: 1rem;
+    top: 1rem;
+    background: #fffced;
+    border: none;
+    border-radius: 50% 10%;
+    padding: 1rem;
+    box-shadow: 1px 1px 4px #3a180ac2;
+  }
+
+  &.modeDark{
+    right: 1rem;
+    bottom: 7rem;
+    font-size: 2rem;
+    border:none;
+    background: none;
+
+    .bi-moon-stars-fill{
+      color:#300d4d;
+    }
+    .bi-sun-fill{
+      color:#ffbe00;
+    }
+  }
+
+}

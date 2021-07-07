@@ -1,14 +1,70 @@
+@use 'src/styles/vars';
+
+.app {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  background: #fffbf1;
+
+  h2{
+    color: vars.$H2-color;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h3{
+    color: vars.$H3-color;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: .8rem 0 .6rem;
+  }
+}
+
+
+//Mode Nuit
+
+.dark {
+  background: #121215;
+  color: #fff3e6;
+
+  h2{
+    color: vars.$D-H2-color;
+  }
+  h3{
+    color: vars.$D-H3-color;
+  }
+}
+
+
+
 button{
   position: fixed;
+  overflow: hidden;
 
   &.modeJDR{
-    right: 1rem;
+    right: 0;
     top: 1rem;
     background: #fffced;
     border: none;
-    border-radius: 50% 10%;
     padding: 1rem;
     box-shadow: 1px 1px 4px #3a180ac2;
+    transform:translate(82%);
+    transition:1s;
+
+    span{
+      transition:0.3s;
+    }
+
+    i.bi-dice-4-fill{
+      padding-right:0.5rem;
+      transform: scale(1.2) rotate(5turn);
+      transition:1s;
+      color: vars.$H2-color;
+    }
+
   }
 
   &.modeDark{
@@ -26,4 +82,20 @@ button{
     }
   }
 
+  &:hover{
+    transform:translate(0%);
+    transition:1s;
+
+    span{
+      margin-left:-1.5rem;
+      transition:1.2s;
+    }
+
+    i.bi-dice-4-fill::before{
+      transform: scale(0) rotate(5turn);      
+      transition:1s;
+    }
+  }
+
 }
+

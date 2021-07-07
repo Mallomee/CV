@@ -1,4 +1,6 @@
 import React from 'react';
+//composants
+import Capacite from 'src/components/Capacite';
 
 import './jdr.scss';
 
@@ -20,42 +22,7 @@ const JDR = () => (
           Spé : Réact
         </div>
       </section>
-      <section className="jdr-capacites">
-        <h2 className="title">Capacités</h2>
-        <div>
-          <h3>Langages</h3>
-          <ul>
-          <li>Javascript
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star"></i></li>
-          <li>PHP
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-half"></i><i className="bi bi-star"></i></li>
-          <li>HTML
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-half"></i></li>
-          <li>CSS/SCSS/SASS
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star"></i></li>
-        </ul>
-        </div>
-        <div>
-          <h3>Bibliothèque</h3>
-          <ul>
-          <li>Réact
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star"></i></li>
-          <li>Redux
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star"></i><i className="bi bi-star"></i></li>
-          <li>Axios
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star"></i><i className="bi bi-star"></i></li>
-        </ul>
-        </div>
-        <div>
-          <h3>Langues</h3>
-          <ul>
-          <li>Français
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-half"></i></li>
-          <li>Anglais
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star"></i><i className="bi bi-star"></i><i className="bi bi-star"></i></li>
-        </ul>
-        </div>
-      </section>
+      <Capacite/>
       <section className="jdr-attributs">
         <h2 className="title">Attributs</h2>
         <div>
@@ -74,7 +41,7 @@ const JDR = () => (
             <li>Sociable</li>
             <li>Ponctuelle</li>
             <li>maîtrise du sort Google Trad</li>
-            <li>Mange de tout ( surtout des COOKIES )</li>
+            <li>Mange de tout (surtout des COOKIES)</li>
           </ul>  
         </div>
         <div>
@@ -89,7 +56,7 @@ const JDR = () => (
       </div>
       </section>
       <section className="jdr-passions">
-      <h2 className="title">Passions</h2>
+        <h2 className="title">Passions</h2>
         <p>
           <span>Manger :</span> je ne mange pas beaucoup mais alors parler nourriture… Ma promo de dev me connaît pour baver à l’évocation des cookies mais je vous rassure, 
           en dehors du poisson, ça marchera avec tout !
@@ -104,8 +71,8 @@ const JDR = () => (
       </section>
       <section className="jdr-repliques">
       <h2 className="title">Répliques</h2>
-        <span className="citation">« En Avant Guingamp ! »</span>  Leitmotiv qui me sert à avancer ! Allez de l’avant et tout donner en route pour ne pas avoir de regrets.
-         Comme le  <span className="citation">« On est pas payé cher mais qu’est-ce qu’on se marre ! »</span>, faut prendre la vie du bon côté et profiter.
+        <span className="citation">« En Avant Guingamp ! »</span>  Leitmotiv qui me sert à avancer ! Allez de l’avant et tout donner en route pour ne pas avoir de regrets. <span className="comp">+7 en motivation ! </span> 
+         Comme le  <span className="citation">« On est pas payé cher mais qu’est-ce qu’on se marre ! »</span>, faut prendre la vie du bon côté et profiter. <span className="comp">+3 en motivation, +4 en bonne humeur. </span>
       </section>
     </main>
     <footer></footer>

@@ -1,9 +1,80 @@
-.app {
-  width: 500px;
-  margin: 1em auto;
-  text-align: center;
-}
+@use 'src/styles/vars';
 
-.app img {
-  max-width: 150px;
+.cv{
+  text-align: justify;
+  margin: auto;
+  max-width: 70%;
+  min-width: 500px;
+  padding: 0 1rem;
+
+  main>section:not(:last-child) {
+    padding-bottom: 0.5rem;
+    border-bottom: thick double vars.$border;
+  }
+
+  p{
+    padding:.3rem 0;
+  }
+
+  text-align: justify;
+
+  &-info{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &-capacites{
+
+    ul{
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    li{
+      min-width: fit-content;
+      padding:0.5rem;
+
+      .bi{
+        color: rgb(255, 208, 0);
+      }
+      i:first-child{
+        margin-left:0.5rem;
+      }
+    }
+  }
+
+  &-attributs{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    h4{
+      font-weight: bold;
+    }
+    div{
+      text-align: left;
+      max-width:30%;
+    }
+    ul{
+      list-style: disc;
+      margin-left: 1.2rem;
+    }
+  }
+
+  &-passions{
+    span{
+      font-weight: bold;
+    }
+  }
+
+  &-repliques{
+    text-align: justify;
+    .citation, .comp{
+      font-style: italic;
+    }
+    .citation{
+      text-decoration: underline;
+    }
+  }
+
 }

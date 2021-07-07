@@ -1,8 +1,16 @@
+@use 'src/styles/vars';
+
+
 .jdr{
+  text-align: justify;
+  margin: auto;
+  max-width: 70%;
+  min-width: 500px;
+  padding: 0 1rem;
 
   main>section:not(:last-child) {
     padding-bottom: 0.5rem;
-    border-bottom: thick double #32a1ce;
+    border-bottom: thick double vars.$border;
   }
 
   p{
@@ -10,14 +18,6 @@
   }
 
   text-align: justify;
-  h2.title{
-    display: block;
-    font-size: 1.5rem;
-    text-align: center;
-    width: 100%;
-    padding: 1rem;
-    color: #3d1908;
-  }
 
   &-info{
     display:flex;
@@ -26,12 +26,7 @@
   }
 
   &-capacites{
-    h3{
-      color: #971f1f;
-      font-size: 1.3rem;
-      text-align: center;
-      margin: 0.7rem 0 0.5rem;
-    }
+
     ul{
       display:flex;
       flex-flow: row wrap;
@@ -75,8 +70,11 @@
 
   &-repliques{
     text-align: justify;
-    .citation{
+    .citation, .comp{
       font-style: italic;
+    }
+    .citation{
+      text-decoration: underline;
     }
   }
 

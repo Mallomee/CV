@@ -13,9 +13,9 @@ const App = ({modeJDR,
               handleChangeModeDark 
             }) => (
 
-  <div className="app">
+  <div className={modeDark ? 'app dark' : 'app'}>
     <button className="modeJDR" onClick={() => {handleChangeModeJDR()}}>
-      {modeJDR ? 'Retournons à plus simple' : 'Fan de Jeu de Rôle ?'}
+    <i className="bi bi-dice-4-fill"></i><span>{modeJDR ? 'Basculer dans la sobriété' : 'Fan de Jeu de Rôle ?'}</span>
     </button>
     <button className="modeDark" onClick={() => {handleChangeModeDark()}}>
       {modeDark ? <i className="bi bi-sun-fill"></i> : <i className="bi bi-moon-stars-fill"></i>}

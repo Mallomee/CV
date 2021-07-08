@@ -5,12 +5,7 @@
   margin: auto;
   max-width: 70%;
   min-width: 500px;
-  padding: 0 1rem;
-
-  main>section:not(:last-child) {
-    padding-bottom: 0.5rem;
-    border-bottom: thick double vars.$border;
-  }
+  padding: 121px 0 1rem;
 
   p{
     padding:.3rem 0;
@@ -19,9 +14,15 @@
   text-align: justify;
 
   &-info{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1rem 3rem;
     display:flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    background: linear-gradient(181.5deg, vars.$L-bg-dirt, 80%, transparent,81%, transparent);
   }
 
   &-capacites{
@@ -76,5 +77,17 @@
       text-decoration: underline;
     }
   }
+
+}
+
+//Mode nuit
+
+.dark{
+
+  .cv-info{
+    background: linear-gradient(181.5deg, vars.$D-bg-purple, 80%, transparent,81%, transparent);
+  }
+
+
 
 }

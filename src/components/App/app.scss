@@ -39,19 +39,21 @@
 }
 
 
+// Gestion des boutons
 
 button{
   position: fixed;
   overflow: hidden;
+  z-index:2;
 
   &.modeJDR{
     right: 0;
-    top: 1rem;
+    top: 111px;
     background: #fffced;
     border: none;
     padding: 1rem;
     box-shadow: 1px 1px 4px #3a180ac2;
-    transform:translate(82%);
+    transform:translate(80%);
     transition:1s;
 
     span{
@@ -94,6 +96,16 @@ button{
     i.bi-dice-4-fill::before{
       transform: scale(0) rotate(5turn);      
       transition:1s;
+    }
+
+    i.bi-sun-fill::before{
+      transform: rotate(2turn);      
+      transition:1s;
+    }
+
+    i.bi-moon-stars-fill::before{
+      transform: rotate3d(0, 1, 0.2, 360deg);      
+      transition: transform 1s ease-in-out;
     }
   }
 

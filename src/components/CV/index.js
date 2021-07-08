@@ -23,6 +23,7 @@ const CV = () => (
           Spécialisation : Réact
         </div>
       </section>
+      
       <Capacite/>
       <section className="cv-attributs">
         <h2 className="title">Attributs</h2>
@@ -36,32 +37,28 @@ const CV = () => (
           </ul>       
         </div>
         <div>
-          <h4>Vertus :</h4>
+          <h4>Qualités/Défauts :</h4>
           <ul>
+            <li>Novice</li>
+            <li>Timide</li>
             <li>Acharnée</li>
             <li>Sociable</li>
             <li>Ponctuelle</li>
-            <li>maîtrise du sort Google Trad</li>
-            <li>Mange de tout (surtout des COOKIES)</li>
+            <li>Débrouillarde</li>
           </ul>  
         </div>
-        <div>
-          <h4>Handicaps :</h4>
-          <ul>
-            <li>Novice</li>
-            <li>Naïve</li>
-            <li>Sujette aux bugs (404)</li>
-            <li>Sensible aux sorts d’humour (concentration -5)</li>
-            <li>Craint les arrêtes de poissons</li>
-          </ul>  
-        </div>
+
       </section>
       <section className="cv-passions">
         <h2 className="title">Passions</h2>
         <p>
           De nature épicurienne, je m'intéresse à tout sans pour autant n'avoir de réelles passions. Je cuisine, je lis, je dessine, je peins. Je m'intéresse à tout ce qui 
-          touche au manuel. Je profite et m'intéresse à tout sauf à la politique et au sport. La nourriture est un sujet toujours plaisant (sauf aux heures des repas...)
+          touche au manuel. Je profite et m'intéresse à tout sauf à la politique et au sport. Je joue aussi sur PC/Switch en solo ou avec des amis sans prétention.
         </p>
+      </section>
+      <section className="cv-projets">
+        <h2 className="title">Projets</h2>
+
       </section>
     </main>
     <footer></footer>
